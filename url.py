@@ -88,7 +88,7 @@ prompt = """
 """
 
 # Line below outputs total_tokens=699216 cached_content_token_count=None
-print(client.models.count_tokens(model="gemini-1.5-flash",contents=[prompt,sample_doc]))
+print(client.models.count_tokens(model="gemini-2.0-flash",contents=[prompt,sample_doc]))
 
 
 fpath = pathlib.Path("output_from_url.md")
@@ -97,7 +97,7 @@ output = client.files.upload(
 )
 
 # Line below outputs total_tokens=8107 cached_content_token_count=None
-print(client.models.count_tokens(model="gemini-1.5-flash",contents=[output]))
+print(client.models.count_tokens(model="gemini-2.0-flash",contents=[output]))
 
 
 # # Generate Markdown from the uploaded file
