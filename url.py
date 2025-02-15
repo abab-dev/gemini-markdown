@@ -111,4 +111,4 @@ print(client.models.count_tokens(model="gemini-2.0-flash",contents=[output]))
 # with open(output_path, "w", encoding="utf-8") as f:
 #     f.write(response.text)
 
-# print(f"Markdown file saved as {}")
+# print(f"Markdown file saved as {output_path}")
